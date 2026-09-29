@@ -10,14 +10,8 @@ An AI tool for e-commerce operators. Give it a product and it will:
 
 ## Screenshots
 
-**Market snapshot:** competitor pricing, ratings, and title keywords
-![Market snapshot](marketplace_screenshots/market.png)
-
 **Customer insights:** top complaints and unmet needs from competitor reviews
-![Customer insights](marketplace_screenshots/insights.png)
-
-**Optimized listing:** top competitor vs. AI-optimized listing
-![Optimized listing](marketplace_screenshots/listing.png)
+![Customer insights](screenshots/insights.png)
 
 **Pricing:** landed cost, break-even, and recommended price
 ![Pricing](marketplace_screenshots/pricing.png)
