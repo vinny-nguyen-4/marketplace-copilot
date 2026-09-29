@@ -14,7 +14,7 @@ An AI tool for e-commerce operators. Give it a product and it will:
 ![Customer insights](screenshots/insights.png)
 
 **Pricing:** landed cost, break-even, and recommended price
-![Pricing](marketplace_screenshots/pricing.png)
+![Pricing](screenshots/pricing.png)
 > **Design choice:** AI handles language tasks (review analysis, copywriting, translation). All pricing math is deterministic Python, because numbers need to be exact and auditable.
 
 ## Architecture
