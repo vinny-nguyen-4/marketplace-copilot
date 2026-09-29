@@ -8,6 +8,19 @@ An AI tool for e-commerce operators. Give it a product and it will:
 4. **Recommend a price.** Calculates landed cost (unit + freight + duty), break-even, and the minimum price for a target margin, then positions it against the competitor price distribution.
 5. **Draft supplier emails.** Writes a clear negotiation email to overseas vendors, with optional Simplified Chinese or Malay translation.
 
+## Screenshots
+
+**Market snapshot:** competitor pricing, ratings, and title keywords
+![Market snapshot](marketplace_screenshots/market.png)
+
+**Customer insights:** top complaints and unmet needs from competitor reviews
+![Customer insights](marketplace_screenshots/insights.png)
+
+**Optimized listing:** top competitor vs. AI-optimized listing
+![Optimized listing](marketplace_screenshots/listing.png)
+
+**Pricing:** landed cost, break-even, and recommended price
+![Pricing](marketplace_screenshots/pricing.png)
 > **Design choice:** AI handles language tasks (review analysis, copywriting, translation). All pricing math is deterministic Python, because numbers need to be exact and auditable.
 
 ## Architecture
