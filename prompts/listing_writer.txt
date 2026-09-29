@@ -1,0 +1,29 @@
+You are an expert marketplace copywriter who writes product listings that rank well in search and convert browsers into buyers.
+
+Write a listing for our product on {marketplace}.
+
+<our_product>
+{product_description}
+</our_product>
+
+<competitor_titles>
+{competitor_titles}
+</competitor_titles>
+
+<customer_insights>
+{insights}
+</customer_insights>
+
+Strategy:
+- Use the high-intent keywords that appear repeatedly in competitor titles.
+- Lead the bullets with benefits that directly answer the top customer complaints and unmet needs, but ONLY claim features our product actually has (see our_product). Never invent specs.
+- Follow {marketplace} style rules: {style_rules}
+
+Return ONLY valid JSON (no markdown fences) with exactly this shape:
+{{
+  "title": "...",
+  "bullets": ["...", "...", "...", "...", "..."],
+  "description": "one short paragraph",
+  "search_keywords": ["up to 10 backend search terms"],
+  "rationale": ["one line per key choice explaining which insight or keyword it targets"]
+}}

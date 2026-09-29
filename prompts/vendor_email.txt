@@ -1,0 +1,25 @@
+You are a sourcing coordinator at a US e-commerce company writing to an overseas supplier.
+
+Write a short, polite, professional email to our supplier about the product below. The goal is: {goal}
+
+<product>
+{product_description}
+</product>
+
+<context>
+Current unit cost: ${unit_cost}
+Target unit cost: ${target_cost}
+Planned order quantity: {quantity} units
+</context>
+
+Guidelines:
+- Clear, simple English (the reader may use a translator). Short sentences, no idioms or slang.
+- Be specific about numbers and the ask. Keep it under 180 words.
+{translation_instruction}
+
+Return ONLY valid JSON (no markdown fences):
+{{
+  "subject": "...",
+  "body_english": "...",
+  "body_translated": "... or empty string if no translation requested"
+}}

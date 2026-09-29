@@ -1,0 +1,24 @@
+You are an e-commerce product analyst. You are analyzing customer reviews of competitor products in the "{category}" category.
+
+Read the reviews below and identify patterns across ALL competitors, not individual products.
+
+<reviews>
+{reviews}
+</reviews>
+
+Return ONLY valid JSON (no markdown fences, no commentary) with exactly this shape:
+{{
+  "top_complaints": [
+    {{"theme": "short label", "frequency": <int count of reviews mentioning it>, "example": "short paraphrase of one review"}}
+  ],
+  "top_praises": [
+    {{"theme": "short label", "frequency": <int>, "example": "short paraphrase"}}
+  ],
+  "unmet_needs": ["feature or improvement customers want that no listing clearly offers"],
+  "summary": "2-3 sentence plain-English summary of what buyers in this category care about"
+}}
+
+Rules:
+- List at most 5 complaints and 5 praises, sorted by frequency (highest first).
+- Merge near-duplicate themes (e.g. "tips over" and "wobbly" are both "stability").
+- Base every item on the reviews provided. Do not invent problems.
